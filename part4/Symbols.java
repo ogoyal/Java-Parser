@@ -3,17 +3,15 @@ import java.util.*;
 public class Symbols {
 
   String str;
-  int depth_decl = -1; //init to -1 for no reason
-  int line_decl = -1;  //init to -1 for no fucking reason
+  int depth_decl = -1;
+  int line_decl = -1; 
 
   int[] assign_arr;
   int[] use_arr;
 
-  ArrayList<int[]> assigned;		//ArrayList-ception
-  ArrayList<int[]> used;		//just kidding, put the shits
-					//above into single arrow
-					//to keep times used/assigned
-					//with lines used/assigned
+  ArrayList<int[]> assigned;		
+  ArrayList<int[]> used;		
+				
 
   public Symbols(String str1, int d, int l){
     str = str1;
